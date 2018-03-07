@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 
+import com.mi.song.goaway.adapter.UsageListAdapter;
 import com.mi.song.goaway.util.AppsUtil;
 import com.mi.song.goaway.util.ScreenUtil;
 import com.mi.song.goaway.util.TimeUtil;
@@ -229,9 +230,7 @@ public class GoAwayWallpaperService extends WallpaperService {
                             }
 
                             mIsDrawApps = true;
-                            List<UsageListAdapter.CustomUsageStats> customUsageStatsList = new ArrayList<>();
-                            AppsUtil.updateAppsUsage(context, UsageStatsManager.INTERVAL_DAILY, customUsageStatsList);
-                            AppsUtil.getAppInfoForWallPaper(context, customUsageStatsList, appUsageStrings);
+                            appUsageStrings = AppsUtil.updateWallpaperStringArray(context);
                             doDraw();
                         }
                     }, TRIGGER_PRESS_DELAY_MILLIS);
