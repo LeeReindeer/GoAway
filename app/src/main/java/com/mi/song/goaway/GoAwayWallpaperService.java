@@ -1,6 +1,5 @@
 package com.mi.song.goaway;
 
-import android.app.usage.UsageStatsManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,13 +16,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 
-import com.mi.song.goaway.adapter.UsageListAdapter;
 import com.mi.song.goaway.util.AppsUtil;
 import com.mi.song.goaway.util.ScreenUtil;
 import com.mi.song.goaway.util.TimeUtil;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author by songhang on 2018/2/21

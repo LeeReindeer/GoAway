@@ -34,7 +34,6 @@ import com.mi.song.goaway.adapter.UsageListAdapter;
 import com.mi.song.goaway.bean.MyUsageStats;
 import com.mi.song.goaway.util.AppsUtil;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
